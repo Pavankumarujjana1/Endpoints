@@ -51,7 +51,7 @@ def test_delete_user():
     assert user_id is not None
     response = client.delete(f"/delete/{user_id}")
     assert response.status_code == 200
-    assert response.json()["message"] == "User deleted"
+    assert response.json()["message"] == "User deleted Susscefully"
 
 
     response = client.get(f"/read/{user_id}")
